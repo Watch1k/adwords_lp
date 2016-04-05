@@ -99,14 +99,16 @@ body
 			a
 				display: block
 				height: 100%
-				&:hover
-					color: $red
-					.icon-help
-						@extend .icon-help-hover
-					span
+			+ li
+				a
+					&:hover
 						color: $red
-					p
-						color: $black
+						.icon-help
+							@extend .icon-help-hover
+						span
+							color: $red
+						p
+							color: $black
 			+ li
 				bottom: 70px
 				width: 52.5%
@@ -551,7 +553,6 @@ input.red-btn:hover
 .numbers
 	margin: 0 auto
 	padding-top: 60px
-	padding-bottom: 80px
 	width: 960px
 	font-size: rem(15)
 	color: $grey
@@ -669,9 +670,8 @@ input.red-btn:hover
 				display: inline-block
 				min-width: 80px
 .users
-	position: relative
-	overflow: hidden
-	margin-top: 40px
+	visibility: hidden
+	margin-top: 400px
 	background-color: #fff
 	+pie-clearfix
 	&__img
@@ -693,6 +693,7 @@ input.red-btn:hover
 			left: -3px
 	&__stats
 		position: relative
+		padding-bottom: 80px
 		background-color: #fff
 		+pie-clearfix
 	&__el
@@ -738,6 +739,14 @@ input.red-btn:hover
 /* ==========================================================================
    Other Styles
    ========================================================================== */
+#liveChat
+	position: fixed
+	z-index: 99
+	right: 0
+	bottom: 100px
+	width: 63px
+	height: 101px
+	background: url('../img/content/live_chat.png') 0 0 no-repeat
 .js-inview
 	visibility: hidden
 	&.animated

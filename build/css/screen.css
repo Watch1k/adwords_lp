@@ -137,7 +137,7 @@ a {
   background-size: 294px 289px;
 }
 
-.icon-help-hover, #tabsHead ul li a:hover .icon-help {
+.icon-help-hover, #tabsHead ul li + li a:hover .icon-help {
   width: 16px;
   height: 16px;
   background-image: url("../img/icons.png");
@@ -395,13 +395,13 @@ body {
   display: block;
   height: 100%;
 }
-#tabsHead ul li a:hover {
+#tabsHead ul li + li a:hover {
   color: #E82626;
 }
-#tabsHead ul li a:hover span {
+#tabsHead ul li + li a:hover span {
   color: #E82626;
 }
-#tabsHead ul li a:hover p {
+#tabsHead ul li + li a:hover p {
   color: #333;
 }
 #tabsHead ul li + li {
@@ -1073,7 +1073,6 @@ input.red-btn:hover {
 .numbers {
   margin: 0 auto;
   padding-top: 60px;
-  padding-bottom: 80px;
   width: 960px;
   font-size: 0.9375rem;
   color: #9B9B9B;
@@ -1284,9 +1283,8 @@ input.red-btn:hover {
 }
 
 .users {
-  position: relative;
-  overflow: hidden;
-  margin-top: 40px;
+  visibility: hidden;
+  margin-top: 400px;
   background-color: #fff;
 }
 .users:before, .users:after {
@@ -1325,6 +1323,7 @@ input.red-btn:hover {
 }
 .users__stats {
   position: relative;
+  padding-bottom: 80px;
   background-color: #fff;
 }
 .users__stats:before, .users__stats:after {
@@ -1401,6 +1400,16 @@ input.red-btn:hover {
 /* ==========================================================================
  * Other Styles
  * ========================================================================== */
+#liveChat {
+  position: fixed;
+  z-index: 99;
+  right: 0;
+  bottom: 100px;
+  width: 63px;
+  height: 101px;
+  background: url("../img/content/live_chat.png") 0 0 no-repeat;
+}
+
 .js-inview {
   visibility: hidden;
 }

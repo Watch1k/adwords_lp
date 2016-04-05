@@ -12,12 +12,16 @@ head.ready(function(){
 	});
 
     // tabsHead
-    $('#tabsHead').tabs({
+    var $tabsHead = $('#tabsHead');
+    $tabsHead.tabs({
         event: 'mouseover',
         activate: function(event, ui) {
             var _index = $('#tabsHead').tabs('option', 'active') + 1;
             $('#tabsHead-' + _index).children('p').addClass('animated');
         }
+    })
+    $tabsHead.find('.ui-tabs-anchor').mouseleave(function() {
+        $tabsHead.tabs({active: 0});
     });
 
     // tabsMain
@@ -26,7 +30,7 @@ head.ready(function(){
         active: false
     }).on('click', function(){
         $('.section-try').show();
-        $('body').animate({
+        $('html, body').animate({
              scrollTop: $("#tabsMain").offset().top - 20
         }, 1000);
     });
@@ -39,17 +43,10 @@ head.ready(function(){
     });
 
     // js-inview
-    $('.js-inview').one('inview', function (event, visible, topOrBottomOrBoth) {
-        if (visible == true) {
+    $('.js-inview').one('inview', function (event, isInView) {
+        if (isInView == true) {
             // element is now visible in the viewport
             $(this).addClass('animated');
-            if (topOrBottomOrBoth == 'top') {
-                // top part of element is visible
-            } else if (topOrBottomOrBoth == 'bottom') {
-                // bottom part of element is visible
-            } else {
-                // whole part of element is visible
-            }
         } else {
             $(this).removeClass('animated');
         }
