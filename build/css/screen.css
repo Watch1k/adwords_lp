@@ -1323,6 +1323,10 @@ input.red-btn:hover {
   position: relative;
   left: -3px;
 }
+.users__stats {
+  position: relative;
+  background-color: #fff;
+}
 .users__stats:before, .users__stats:after {
   content: "";
   display: table;
@@ -1345,8 +1349,20 @@ input.red-btn:hover {
 .users__el .users__el-bar {
   position: relative;
   left: -2px;
+  width: 0;
   height: 10px;
   background-color: #E82626;
+  -webkit-transition: 2.5s;
+  -moz-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
+}
+.users__el .users__el-bar.animated {
+  width: 100%;
+  -webkit-transition: 2.5s;
+  -moz-transition: 2.5s;
+  -o-transition: 2.5s;
+  transition: 2.5s;
 }
 .users__el + .users__el {
   width: 8%;

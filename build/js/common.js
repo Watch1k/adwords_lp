@@ -39,7 +39,7 @@ head.ready(function(){
     });
 
     // js-inview
-    $('.js-inview').bind('inview', function (event, visible, topOrBottomOrBoth) {
+    $('.js-inview').one('inview', function (event, visible, topOrBottomOrBoth) {
         if (visible == true) {
             // element is now visible in the viewport
             $(this).addClass('animated');

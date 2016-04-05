@@ -692,6 +692,8 @@ input.red-btn:hover
 			position: relative
 			left: -3px
 	&__stats
+		position: relative
+		background-color: #fff
 		+pie-clearfix
 	&__el
 		float: left
@@ -701,8 +703,13 @@ input.red-btn:hover
 		.users__el-bar
 			position: relative
 			left: -2px
+			width: 0
 			height: 10px
 			background-color: $red
+			transition: 2.5s
+			&.animated
+				width: 100%
+				transition: 2.5s
 		+ .users__el
 			width: 8%
 			.users__el-bar
