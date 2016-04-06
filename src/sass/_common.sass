@@ -29,15 +29,11 @@ svg
 	display: none
 .row
 	+pie-clearfix
-// *
-// 	+selection
-// 		color: #fff
-// 		background-color: $red
 html
 	font-size: 16px
 body
 	overflow: auto
-	min-width: 1024px
+	min-width: 320px
 	font-family: $arial
 	font-size: rem(13)
 	color: $black
@@ -69,8 +65,6 @@ body
 /* ==========================================================================
    Main
    ========================================================================== */
-.onepage
-	// min-height: 100vh
 .logo
 	position: absolute
 	left: 20px
@@ -155,14 +149,6 @@ body
 					font-size: rem(18)
 					color: $grey
 					line-height: rem(24)
-			+r(1200)
-				p
-					font-size: rem(36)
-					line-height: rem(42)
-			+r(1080)
-				p
-					font-size: rem(32)
-					line-height: rem(38)
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked
@@ -271,7 +257,6 @@ label:hover:before
 	border: 1px solid #d3d3d3
 	border-radius: 2px
 	font-size: 14px
-	line-height: 18px
 	height: 40px
 	line-height: 40px
 	color: #888
@@ -300,7 +285,6 @@ label:hover:before
 	*display: inline
 input.red-btn
 	padding-top: 4px
-	background-color: #c20509
 	color: #fff
 	text-align: center
 	display: block
@@ -313,7 +297,7 @@ input.red-btn
 	transition: 0.2s all ease-out
 	width: 100%
 	height: 40px
-	background: linear-gradient(to top, #C41919, #E82626)
+	background: #c20509 linear-gradient(to top, #C41919, #E82626)
 input.red-btn:hover
 	background: linear-gradient(to top, lighten(#C41919,7), lighten(#E82626,7))
 /* tabsMain
@@ -338,6 +322,7 @@ input.red-btn:hover
 			font-size: rem(20)
 			line-height: 45px
 			text-align: center
+			letter-spacing: 0.03em
 			border-radius: 100px
 			&.ui-tabs-active
 				color: #fff

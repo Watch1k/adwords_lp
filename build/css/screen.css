@@ -310,7 +310,7 @@ html {
 
 body {
   overflow: auto;
-  min-width: 1024px;
+  min-width: 320px;
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 0.8125rem;
   color: #333;
@@ -454,18 +454,6 @@ body {
   font-size: 1.125rem;
   color: #9B9B9B;
   line-height: 1.5rem;
-}
-@media only screen and (max-width: 1200px) {
-  #tabsHead ul ~ div p {
-    font-size: 2.25rem;
-    line-height: 2.625rem;
-  }
-}
-@media only screen and (max-width: 1080px) {
-  #tabsHead ul ~ div p {
-    font-size: 2rem;
-    line-height: 2.375rem;
-  }
 }
 
 /* Base for label styling */
@@ -641,7 +629,6 @@ label:hover:before {
   -moz-border-radius: 2px;
   border-radius: 2px;
   font-size: 14px;
-  line-height: 18px;
   height: 40px;
   line-height: 40px;
   color: #888;
@@ -681,7 +668,6 @@ label:hover:before {
 
 input.red-btn {
   padding-top: 4px;
-  background-color: #c20509;
   color: #fff;
   text-align: center;
   display: block;
@@ -699,11 +685,11 @@ input.red-btn {
   transition: 0.2s all ease-out;
   width: 100%;
   height: 40px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#C41919), to(#E82626));
-  background: -webkit-linear-gradient(bottom, #C41919, #E82626);
-  background: -moz-linear-gradient(bottom, #C41919, #E82626);
-  background: -o-linear-gradient(bottom, #C41919, #E82626);
-  background: linear-gradient(to top, #C41919, #E82626);
+  background: #c20509 -webkit-gradient(linear, left bottom, left top, from(#C41919), to(#E82626));
+  background: #c20509 -webkit-linear-gradient(bottom, #C41919, #E82626);
+  background: #c20509 -moz-linear-gradient(bottom, #C41919, #E82626);
+  background: #c20509 -o-linear-gradient(bottom, #C41919, #E82626);
+  background: #c20509 linear-gradient(to top, #C41919, #E82626);
 }
 
 input.red-btn:hover {
@@ -748,6 +734,7 @@ input.red-btn:hover {
   font-size: 1.25rem;
   line-height: 45px;
   text-align: center;
+  letter-spacing: 0.03em;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
