@@ -361,7 +361,7 @@ body {
 }
 
 #tabsHead {
-  height: 474px;
+  height: 444px;
   background: #fff url("../img/sky_bg_with_girl.jpg") 0 0 no-repeat;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -716,6 +716,9 @@ input.red-btn:hover {
 
 /* tabsMain
  * ========================================================================== */
+#tabsMain {
+  margin-top: 40px;
+}
 #tabsMain:before, #tabsMain:after {
   content: "";
   display: table;
