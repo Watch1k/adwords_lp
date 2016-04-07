@@ -16,16 +16,11 @@ head.ready(function(){
                 minWidth = 1000,
                 zoom = 1;
 
-            if ( (width < startWidth - 20) && (width >= minWidth) ) {
+            if ( (width < startWidth - 20) ) {
                 zoom = width / startWidth;
                 // $('.onepage, #contact').css('zoom', zoom * 100 + '%');
                 $('body').css('zoom', zoom * 100 + '%');
                 return false;
-            } else {
-                if (width < minWidth) {
-                    zoom = minWidth / startWidth;
-                    $('.onepage, #contact').css('zoom', zoom * 100 + '%');
-                }
             }
         }
     }
