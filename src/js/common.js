@@ -10,18 +10,24 @@ head.ready(function(){
     }
 
     function zoomPage() {
-        if ($('html').hasClass('desktop')) {
+        var html = $('html'),
+            body = $('body');
+        if (html.hasClass('desktop')) {
             var width = $(window).width(),
                 startWidth = 1366,
-                minWidth = 1000,
                 zoom = 1;
 
             if ( (width < startWidth - 20) ) {
                 zoom = width / startWidth;
                 // $('.onepage, #contact').css('zoom', zoom * 100 + '%');
-                $('body').css('zoom', zoom * 100 + '%');
+                body.css('zoom', zoom * 100 + '%');
+                // html.addClass('is-zoom');
+                html.addClass('is-zoom');
                 return false;
             }
+
+            body.css('zoom', '100%');
+            html.removeClass('is-zoom');
         }
     }
 
