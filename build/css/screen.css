@@ -409,6 +409,7 @@ body {
 #tabsHead ul li + li + li {
   bottom: 140px;
   width: 40.5%;
+  font-size: 2rem;
 }
 #tabsHead ul li span {
   color: #9B9B9B;
@@ -462,7 +463,7 @@ body {
   float: left;
   margin-left: 60px;
   margin-top: 125px;
-  width: 235px;
+  width: 386px;
   height: 61px;
   background: url("../img/content/verified_by.png") 0 0 no-repeat;
 }
