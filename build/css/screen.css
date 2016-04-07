@@ -462,9 +462,8 @@ body {
 .verify {
   position: relative;
   z-index: 1;
-  top: -150px;
   float: right;
-  margin-top: 40px;
+  margin-top: -10px;
   opacity: 0.6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 }
@@ -472,7 +471,7 @@ body {
   float: right;
 }
 .verify .row + .row {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 /* Base for label styling */
