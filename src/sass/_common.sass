@@ -154,11 +154,15 @@ body
 					line-height: 24px
 .verify
 	float: left
+	margin-top: 40px
 	margin-left: 60px
-	margin-top: 125px
-	width: 386px
-	height: 61px
-	background: url('../img/content/verified_by.png') 0 0 no-repeat
+	opacity: 0.6
+	img
+		display: block
+		+ img
+			margin-top: 25px
+			+ img
+				margin-top: 20px
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked
