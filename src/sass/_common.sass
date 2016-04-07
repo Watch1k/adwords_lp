@@ -153,16 +153,17 @@ body
 					color: $grey
 					line-height: 24px
 .verify
-	float: left
+	position: relative
+	z-index: 1
+	top: -150px
+	float: right
 	margin-top: 40px
-	margin-left: 60px
 	opacity: 0.6
 	img
-		display: block
-		+ img
-			margin-top: 25px
-			+ img
-				margin-top: 20px
+		float: right
+	.row
+		+ .row
+			margin-top: 100px
 /* Base for label styling */
 [type="checkbox"]:not(:checked),
 [type="checkbox"]:checked

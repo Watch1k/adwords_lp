@@ -460,20 +460,19 @@ body {
 }
 
 .verify {
-  float: left;
+  position: relative;
+  z-index: 1;
+  top: -150px;
+  float: right;
   margin-top: 40px;
-  margin-left: 60px;
   opacity: 0.6;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 }
 .verify img {
-  display: block;
+  float: right;
 }
-.verify img + img {
-  margin-top: 25px;
-}
-.verify img + img + img {
-  margin-top: 20px;
+.verify .row + .row {
+  margin-top: 100px;
 }
 
 /* Base for label styling */
