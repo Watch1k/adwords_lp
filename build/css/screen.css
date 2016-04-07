@@ -310,7 +310,7 @@ html {
 
 body {
   overflow: auto;
-  min-width: 320px;
+  min-width: 1000px;
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 0.8125rem;
   color: #333;
@@ -346,7 +346,7 @@ body {
   padding-top: 20px;
   height: 52px;
   font-size: 0.6875rem;
-  line-height: 0.75rem;
+  line-height: 12px;
   text-align: center;
 }
 
@@ -360,18 +360,20 @@ body {
   z-index: 1;
 }
 
+.onepage {
+  margin: 0 auto;
+  width: 1366px;
+  background: #fff url("../img/sky_bg_with_girl.jpg") 0 -20px no-repeat;
+}
+
 #tabsHead {
   height: 444px;
-  background: #fff url("../img/sky_bg_with_girl.jpg") 0 0 no-repeat;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 #tabsHead ul {
   height: 100%;
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 24px;
 }
 #tabsHead ul li {
   position: absolute;
@@ -415,7 +417,7 @@ body {
   margin-top: 5px;
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 0.8125rem;
-  line-height: 1.125rem;
+  line-height: 18px;
 }
 #tabsHead ul li .icon {
   display: inline-block;
@@ -431,7 +433,7 @@ body {
 #tabsHead ul ~ div p {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 2.625rem;
-  line-height: 3rem;
+  line-height: 48px;
 }
 #tabsHead ul ~ div p span {
   display: block;
@@ -439,21 +441,30 @@ body {
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 1.125rem;
   color: #9B9B9B;
-  line-height: 1.5rem;
+  line-height: 24px;
 }
 #tabsHead ul ~ div p + p {
   padding-top: 20px;
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 1.125rem;
   color: #9B9B9B;
-  line-height: 1.5rem;
+  line-height: 24px;
 }
 #tabsHead ul ~ div span + p {
   padding-top: 20px;
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 1.125rem;
   color: #9B9B9B;
-  line-height: 1.5rem;
+  line-height: 24px;
+}
+
+.verify {
+  float: left;
+  margin-left: 60px;
+  margin-top: 125px;
+  width: 235px;
+  height: 61px;
+  background: url("../img/content/verified_by.png") 0 0 no-repeat;
 }
 
 /* Base for label styling */
@@ -564,14 +575,14 @@ label:hover:before {
 .contact-text p {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 2.1875rem;
-  line-height: 3rem;
+  line-height: 48px;
   text-transform: uppercase;
 }
 .contact-text p + p {
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 1.125rem;
   color: #9B9B9B;
-  line-height: 1.5rem;
+  line-height: 24px;
   text-transform: none;
 }
 
@@ -597,7 +608,7 @@ label:hover:before {
   margin-bottom: 20px;
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 24px;
   text-align: center;
 }
 
@@ -752,7 +763,7 @@ input.red-btn:hover {
   font-family: "Arial MT", Arial, sans-serif;
   font-size: 0.9375rem;
   color: #9B9B9B;
-  line-height: 1.25rem;
+  line-height: 20px;
 }
 .case__el {
   overflow: hidden;
@@ -803,14 +814,14 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1rem;
   color: #2A387A;
-  line-height: 1.1875rem;
+  line-height: 19px;
   text-transform: uppercase;
 }
 .case h3 {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 2.625rem;
   color: #333;
-  line-height: 3rem;
+  line-height: 48px;
 }
 .case p {
   margin-top: 20px;
@@ -840,7 +851,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Regular", Arial, sans-serif;
   font-size: 1.125rem;
   color: #444;
-  line-height: 1.3125rem;
+  line-height: 21px;
 }
 .case__numbers p + p {
   margin-top: 5px;
@@ -898,7 +909,7 @@ input.red-btn:hover {
   margin: 0;
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 2.625rem;
-  line-height: 3rem;
+  line-height: 48px;
 }
 .section-try__list {
   margin: 30px auto 40px;
@@ -933,7 +944,7 @@ input.red-btn:hover {
   padding: 80px 0;
   width: 960px;
   font-size: 0.9375rem;
-  line-height: 1.25rem;
+  line-height: 20px;
 }
 .faq li + li {
   margin-top: 50px;
@@ -943,7 +954,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.625rem;
   color: #333;
-  line-height: 1.875rem;
+  line-height: 30px;
 }
 
 /* Partners
@@ -984,6 +995,7 @@ input.red-btn:hover {
   vertical-align: middle;
 }
 .partners__list li img {
+  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -996,7 +1008,7 @@ input.red-btn:hover {
   width: 960px;
   font-size: 0.9375rem;
   color: #9B9B9B;
-  line-height: 1.5625rem;
+  line-height: 25px;
 }
 .testimonials__list:before, .testimonials__list:after {
   content: "";
@@ -1034,7 +1046,7 @@ input.red-btn:hover {
   display: block;
   margin-top: 20px;
   font-size: 0.9375rem;
-  line-height: 1.0625rem;
+  line-height: 17px;
 }
 .testimonials__logo:hover span {
   text-decoration: underline;
@@ -1051,7 +1063,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.25rem;
   color: #333;
-  line-height: 1.5625rem;
+  line-height: 25px;
 }
 
 /* Numbers
@@ -1062,7 +1074,7 @@ input.red-btn:hover {
   width: 960px;
   font-size: 0.9375rem;
   color: #9B9B9B;
-  line-height: 1.25rem;
+  line-height: 20px;
 }
 .numbers:before, .numbers:after {
   content: "";
@@ -1073,7 +1085,7 @@ input.red-btn:hover {
 }
 .numbers__desc {
   font-size: 0.8125rem;
-  line-height: 0.9375rem;
+  line-height: 15px;
 }
 
 .count {
@@ -1108,7 +1120,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 2rem;
   color: #333;
-  line-height: 2.375rem;
+  line-height: 38px;
 }
 .count__bot {
   margin-top: 60px;
@@ -1154,7 +1166,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.25rem;
   color: #333;
-  line-height: 1.375rem;
+  line-height: 22px;
 }
 .count__right {
   float: left;
@@ -1186,7 +1198,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.25rem;
   color: #333;
-  line-height: 1.5rem;
+  line-height: 24px;
 }
 .count__right-title .icon {
   display: inline-block;
@@ -1230,7 +1242,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 2rem;
   color: #333;
-  line-height: 2.375rem;
+  line-height: 38px;
 }
 .region__stats {
   margin-top: 40px;
@@ -1261,7 +1273,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.25rem;
   color: #333;
-  line-height: 1.5rem;
+  line-height: 24px;
 }
 .region__el-text span {
   display: inline-block;
@@ -1371,7 +1383,7 @@ input.red-btn:hover {
   font-family: "Roboto Condensed Bold", Arial, sans-serif;
   font-size: 1.25rem;
   color: #333;
-  line-height: 1.25rem;
+  line-height: 20px;
 }
 
 .comscore-logo {
