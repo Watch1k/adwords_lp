@@ -1290,7 +1290,7 @@ input.red-btn:hover {
 
 .users {
   visibility: hidden;
-  margin-top: 400px;
+  margin-top: 40px;
   background-color: #fff;
 }
 .users:before, .users:after {
